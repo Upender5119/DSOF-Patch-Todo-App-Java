@@ -10,6 +10,11 @@
     <packaging>war</packaging>
     <name>Java Goof :: Todolist Goof :: Todolist Web Struts</name>
 
+    <properties>
+        <struts2.version>2.3.32</struts2.version> <!-- Define struts2.version here -->
+        <spring.version>5.3.8</spring.version> <!-- Example, adjust according to your Spring version -->
+    </properties>
+
     <dependencies>
 
         <dependency>
@@ -54,7 +59,7 @@
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
-            <version>${struts2.version}</version>
+            <version>${struts2.version}</version> <!-- This will now be 2.3.32 -->
             <exclusions>
                 <exclusion>
                     <artifactId>asm</artifactId>
@@ -66,7 +71,7 @@
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-spring-plugin</artifactId>
-            <version>${struts2.version}</version>
+            <version>${struts2.version}</version> <!-- This will now be 2.3.32 -->
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework</groupId>
